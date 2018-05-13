@@ -14,3 +14,21 @@ Otsikkorivin teksteillä ei ole merkitystä.
 #### Riippuvuudet:
 - paljon, kts. requirements.txt
 - lisäksi [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/)
+
+#### Komentorivikäyttö
+
+esimerkiksi:
+```python
+> python excel-kipa-cli.py http://10.0.0.4/kipa/LLHK18/syota/tehtava/139/ TESTI.xlsx --sheet Taul3
+```
+help-toiminto:
+```python
+> python excel-kipa-cli.py -h
+usage: excel-kipa-cli.py [-h] [-s SHEET] url file
+positional arguments:
+  url                     page url
+  file                    name of source file
+optional arguments:
+  -h, --help              show this help message and exit
+  -s SHEET, --sheet SHEET sheet index, default 0
+```
