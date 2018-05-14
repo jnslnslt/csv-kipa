@@ -1,15 +1,14 @@
 # excel-kipa-cli
 
-Komentorivipohjainen työkalu, jolla voidaan lukea excel-tiedosto (.xls/.xlsx) ja täyttää [KIPA:n](https://github.com/partio-scout/kipa) tehtävä-formi. Excel-taulukon rakenne: 1. sarake: vartion nro, 2. sarake: kisapisteet, 3. sarake: tekstilaatikon id:n loppuosa
+Komentorivipohjainen työkalu, jolla voidaan lukea excel-tiedosto (.xls/.xlsx) ja täyttää [KIPA:n](https://github.com/partio-scout/kipa) tehtävä-formi. Excel-taulukon rakenne: 1. sarake: vartion nro, 2+ sarake: kisapisteet. Otsikkorivi: 1. sarake: ei väliä, 2+ sarake: syötteen id-numero
 
-Ohjelma kokoaa tekstilaatikon id:n vartion numerosta ja id:n loppuosasta.
-Otsikkorivin teksteillä ei ole merkitystä.
+Ohjelma kokoaa tekstilaatikon id:n vartion numerosta ja syötteen id:stä
 
 #### Esimerkki:
-| nro | pisteet | id:n loppu |
+| nro | 449 | 450 |
 | --- | --- | --- |
-| 101 | 5 | _449-arvo |
-| 102 | 3 | _449-arvo |
+| 101 | 5 | 0 |
+| 102 | 3 | 1 |
 
 #### Riippuvuudet:
 - paljon, kts. requirements.txt
