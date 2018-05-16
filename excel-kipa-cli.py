@@ -26,14 +26,14 @@ for index, row in df.iterrows():
         try:
             element = driver.find_element_by_id(id)
             element.clear()
-            element.send_keys(row[i])
+            element.send_keys(str(row[i]))
         except NoSuchElementException:
             print("WARN: element with id: " + id + " not found")
 
 # find save button and click it
 try:
-    save = driver.find_element_by_id("Tallenna") # true id?
-    element.click()
+    save = driver.find_element_by_name("tallenna") # no id
+    save.click()
     driver.quit() #close browser window
 except:
     print("WARN: save button not found")
